@@ -8,7 +8,7 @@ using System.Web.Http;
 namespace MIS.Controllers
 {
     [RoutePrefix("api/Projects")]
-    public class ProjectsController : ApiController
+    public class ProjectApiController : ApiController
     {
         // GET: api/Projects
         [Route("GetAll")]
