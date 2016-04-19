@@ -11,13 +11,14 @@
     @Scripts.Render("~/App_NG/controllers/dashboardCtrl.js")
     @Scripts.Render("~/App_NG/services/dataService.js")
 </head>
-<body ng-app="dashMIS">
-    <h1> {{2+2}}  </h1>
-    <div ng-controller="dashboardCtrl"> 
-        <input type="text" ng-model="sms" /> 
-        <input value="click me!" type="button" ng-click="getData()" /> 
-        <h2> {{sms}} </h2>
-        <h3> {{returnVal}} </h3>
+<body >    
+    <div ng-app="dashMIS">
+        <div ng-controller="dashboardCtrl">
+            <input type="text" ng-model="sms" />
+            <input value="click me!" type="button" ng-click="getData()" />
+            <h2> {{sms}} </h2>
+            <h3> {{returnVal}} </h3>
+        </div>
     </div>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">

@@ -3,21 +3,11 @@
 
         var getAllProjects = function (value) {
 
-            //var returnVal = 'initial';
-            //if (value == 1)
-            //    returnVal = 'one';
-            //else
-            //    returnVal = 'none';
-
-            //return returnVal;
-
             var returnVal1 = 'vvaall';
             return $http.get("/api/Projects/GetAll")
-            .then(function (val) {
-                    //returnVal1 = val.data[1];
+            .then(function (val) {                    
                     return val;
-            });
-            
+            });            
         };
         
         return {

@@ -13,16 +13,8 @@
             $scope.error = reason;
         };
 
-        $scope.getData = function() {            
-            //var local = dataService.getAllProjects($scope.sms);
-            //onData(local);
+        $scope.getData = function() {                        
             dataService.getAllProjects($scope.sms).then(onData, onError);
-
-            //$http.get("/api/Projects/GetAll")
-            //.then(function (val) {
-            //    returnVal1 = val.data[1];
-            //    return returnVal1;
-            //});            
         };        
     };
 
