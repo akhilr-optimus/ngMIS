@@ -1,7 +1,7 @@
 ﻿(function () {
     var app = angular.module('dashMIS');
-   
-    var dashboardCtrl = function ($scope, dataService, $http) {
+
+    var dashboardCtrl = function ($scope, dataService, $http) {        
         $scope.sms = 'frmDashboardCtrl';
         $scope.returnVal = 'default';
 
@@ -13,9 +13,9 @@
             $scope.error = reason;
         };
 
-        $scope.getData = function() {                        
+        $scope.getData = function () {
             dataService.getAllProjects($scope.sms).then(onData, onError);
-        };        
+        };
     };
 
     app.controller("dashboardCtrl", dashboardCtrl);

@@ -4,7 +4,7 @@
         var getAllProjects = function (value) {
 
             var returnVal1 = 'vvaall';
-            return $http.get("/api/Projects/GetAll")
+            return $http.get("/api/Project/GetAll")
             .then(function (val) {                    
                     return val;
             });            

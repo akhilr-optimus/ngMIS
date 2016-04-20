@@ -225,6 +225,9 @@
   <ItemGroup>
     <Content Include="App_NG\app.js" />
     <Content Include="App_NG\controllers\dashboardCtrl.js" />
+    <Content Include="App_NG\controllers\navMenuCtrl.js" />
+    <Content Include="App_NG\controllers\projectDetailsCtrl.js" />
+    <Content Include="App_NG\Index.html" />
     <Content Include="App_NG\services\dataService.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -299,6 +302,8 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Project\Index.cshtml" />
+    <Content Include="App_NG\partials\NavMenu.html" />
+    <Content Include="App_NG\partials\ProjectDetails.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

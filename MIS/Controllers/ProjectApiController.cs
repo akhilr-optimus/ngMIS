@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace MIS.Controllers
 {
-    [RoutePrefix("api/Projects")]
+    [RoutePrefix("api/Project")]
     public class ProjectApiController : ApiController
     {
         // GET: api/Projects
