@@ -1,1 +1,20 @@
 ﻿<H1>This is from Project Details</H1>
+<div class="container">
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th>Project Id</th>
+                <th>Project Name</th>
+                <th>Project Department</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="project in projectsData">
+                <td>{{project.id}}</td>
+                <td>{{project.name}}</td>
+                <td>{{project.dept}}</td>
+                <td><button ng-click="getProjectData(project.id)">Edit Details</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

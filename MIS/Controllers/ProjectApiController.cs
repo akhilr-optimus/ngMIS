@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -14,13 +15,19 @@ namespace MIS.Controllers
         [Route("GetAll")]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "project 1", "project 2","project 3", "project 4" };
         }
 
         // GET: api/Projects/5
+        [Route("Get")]
         public string Get(int id)
         {
-            return "value";
+            if (id == 2)
+            {
+                return "this is project 2";
+            }
+                
+            return "random value";
         }
 
         // POST: api/Projects
