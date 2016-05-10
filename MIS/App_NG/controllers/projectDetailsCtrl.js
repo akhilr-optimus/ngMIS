@@ -9,6 +9,11 @@
             $location.url("/ProjectEdit");
         };
 
+        $scope.onEditModal = function (data) {
+            dataService.setSelectedProject(data);
+            $location.url("/ProjectEdit");
+        };
+
         $scope.getData = function () {
             $scope.projectsData = dataService.getAllProjects();
         };

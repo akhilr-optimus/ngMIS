@@ -4,8 +4,10 @@
         <thead>
             <tr>
                 <th>Project Id</th>
-                <th>Project Name</th>
-                <th>Project Department</th>                
+                <th>Name</th>
+                <th>Department</th>
+                <th>Edit using Partial</th>
+                <th>Edit using Modal</th>                
             </tr>
         </thead>
         <tbody>
@@ -13,7 +15,8 @@
                 <td>{{project.id}}</td>
                 <td>{{project.name}}</td>
                 <td>{{project.dept}}</td>
-                <td><button ng-click="onEdit(project)">Edit Details</button></td>                
+                <td><button ng-click="onEdit(project)">Edit Details</button></td>
+                <td><button ng-click="onEditModal(project)">Edit in popup</button></td>                
             </tr>
         </tbody>
     </table>

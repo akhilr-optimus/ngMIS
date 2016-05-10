@@ -1,7 +1,6 @@
-﻿<form ng-submit="onSave(selProject)" method="post" >
+﻿<form ng-submit="onSave(selProject)" method="post">
     Project Id: {{selProject.id}}<br><br>
     Project Name: <br><input type="text" ng-model="selProject.name"><br><br>
     Department: <br><input type="text" ng-model="selProject.dept"><br><br>
-    <h1>{{selProject.dept}}</h1>
     <input type="submit" value="Submit">
 </form>
