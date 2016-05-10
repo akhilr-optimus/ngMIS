@@ -284,6 +284,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\ngDialog.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
@@ -306,6 +307,7 @@
     <Content Include="Views\Project\Index.cshtml" />
     <Content Include="App_NG\partials\NavMenu.html" />
     <Content Include="App_NG\partials\ProjectDetails.html" />
+    <Content Include="Scripts\ngDialog.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
