@@ -14,7 +14,6 @@
         };
                 
         $scope.getData();
-        //$scope.getProjectData(2);
     };
 
     app.controller("projectDetailsCtrl", projectDetailsCtrl);
