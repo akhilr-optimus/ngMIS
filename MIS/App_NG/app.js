@@ -11,6 +11,10 @@
                 templateUrl: "partials/ProjectDetails.html",
                 controller: 'projectDetailsCtrl'
             })
+            .when('/ProjectEdit', {
+                templateUrl: "partials/ProjectEdit.html",
+                controller: 'projectEditCtrl'
+            })
             .otherwise({ redirectTo: "/dashboard" });
     });
 }());

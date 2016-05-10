@@ -13,36 +13,37 @@ namespace MIS.Controllers
     {
         // GET: api/Projects
         [Route("GetAll")]
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new string[] { "project 1", "project 2","project 3", "project 4" };
+            var projectsJson = "'projects':[{'id':'1','name':'p1','dept':'dev'},{'id':'2','name':'p2','dept':'dev'},{'id':'3','name':'p3','dept':'qa'}]";
+            return projectsJson;
         }
 
         // GET: api/Projects/5
-        [Route("Get")]
-        public string Get(int id)
-        {
-            if (id == 2)
-            {
-                return "this is project 2";
-            }
-                
-            return "random value";
-        }
+        [Route("{id:int}/Get")]
+public string Get(int id)
+{
+    if (id == 2)
+    {
+        return "this is project 2";
+    }
 
-        // POST: api/Projects
-        public void Post([FromBody]string value)
-        {
-        }
+    return "random value";
+}
 
-        // PUT: api/Projects/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
+// POST: api/Projects
+public void Post([FromBody]string value)
+{
+}
 
-        // DELETE: api/Projects/5
-        public void Delete(int id)
-        {
-        }
+// PUT: api/Projects/5
+public void Put(int id, [FromBody]string value)
+{
+}
+
+// DELETE: api/Projects/5
+public void Delete(int id)
+{
+}
     }
 }

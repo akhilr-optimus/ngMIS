@@ -227,7 +227,9 @@
     <Content Include="App_NG\controllers\dashboardCtrl.js" />
     <Content Include="App_NG\controllers\navMenuCtrl.js" />
     <Content Include="App_NG\controllers\projectDetailsCtrl.js" />
+    <Content Include="App_NG\controllers\projectEditCtrl.js" />
     <Content Include="App_NG\Index.html" />
+    <Content Include="App_NG\partials\ProjectEdit.html" />
     <Content Include="App_NG\services\dataService.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
