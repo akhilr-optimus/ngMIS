@@ -2,12 +2,10 @@
     var app = angular.module('dashMIS');
 
     var projectEditCtrl = function ($scope, dataService, $location) {
-
+        $scope.selProject;
+        $scope.selProject = dataService.getSelectedProject();
         $scope.onSave = function (data) {
-            $scope.$apply(function () {
-                dataService.setSelectedProject(data);
-            });
-            
+            dataService.saveProject(data);
             $location.url("/ProjectDetails");
         };
     };

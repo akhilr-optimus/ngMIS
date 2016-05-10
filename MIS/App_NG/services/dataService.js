@@ -35,10 +35,19 @@
         var setSelectedProject = function (project) {
             selectedProject = project;
         };
+
+        var saveProject = function (p) {
+            saveId = 1;
+            //saveId = projectsData.indexOf(project.id == p.id);
+            projectsData[saveId].name = p.name;
+            projectsData[saveId].dept = p.dept;
+        };
+
         return {
             getAllProjects: getAllProjects,
             getSelectedProject: getSelectedProject,
-            setSelectedProject: setSelectedProject
+            setSelectedProject: setSelectedProject,
+            saveProject: saveProject
         };
     };
     var app = angular.module("dashMIS");
